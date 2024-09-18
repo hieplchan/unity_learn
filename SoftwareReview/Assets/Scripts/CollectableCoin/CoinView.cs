@@ -1,6 +1,6 @@
 namespace CollectableCoin
 {
-    internal interface ICoinView
+    public interface ICoinView
     {
         void UpdateCoinsDisplay(int coins);
     }

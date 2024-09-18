@@ -1,5 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
+using CollectableCoin;
+using NSubstitute;
 using NUnit.Framework;
 using UnityEditor.VersionControl;
 using UnityEngine;
@@ -28,17 +32,41 @@ public class CoinCollectorEditorTests
         Assert.That(list, Is.Unique);
         Assert.That(list, Has.Exactly(3).Matches<int>(NumberPredicates.IsOdd));
     }
-}
 
-public static class NumberPredicates
-{
-    public static bool IsEven(int number)
+    private ICoinController _controller;
+    private ICoinView _view;
+    private ICoinModel _model;
+    private ICoinService _service;
+
+    [SetUp]
+    public void Setup()
     {
-        return number % 2 == 0;
+        _view = Substitute.For<ICoinView>();
+        _service = Substitute.For<ICoinService>();
+        _model = Substitute.For<ICoinModel>();
+        
+        Assert.That(_view, Is.Not.Null);
+        Assert.That(_service, Is.Not.Null);
+        Assert.That(_model, Is.Not.Null);
+
+        _model.Coins.Returns(new Observable<int>(0));
+        
+        Assert.That(_model.Coins, Is.Not.Null);
+        Assert.That(_model, Has.Property("Coins").Not.Null);
+
+        _service.Load().Returns(_model);
+        _controller = new CoinController(_view, _service);
+        
+        Assert.That(_controller, Is.Not.Null);
     }
+    
+    [TearDown]
+    public void TearDown() { }
 
-    public static bool IsOdd(int number)
+    [Test]
+    public void CoinController_Constructor_ShouldThrowArgumentException_WhenViewIsNull()
     {
-        return number % 2 != 0;
+        Assert.That(() => new CoinController(null, _service), Throws.ArgumentNullException);
+        Assert.Throws<ArgumentNullException>(() => new CoinController(null, _service));
     }
 }

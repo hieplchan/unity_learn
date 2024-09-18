@@ -15,8 +15,11 @@ namespace CollectableCoin
         private readonly ICoinView _view;
         private readonly ICoinService _service;
 
-        CoinController(ICoinView view, ICoinService service)
+        public CoinController(ICoinView view, ICoinService service)
         {
+            Preconditions.CheckNotNull(view, "CoinView cannot be null");
+            Preconditions.CheckNotNull(service, "CoinService cannot be null");
+            
             _view = view;
             _service = service;
 

@@ -1,6 +1,6 @@
 namespace CollectableCoin
 {
-    internal interface ICoinService
+    public interface ICoinService
     {
         ICoinModel Load();
         void Save(ICoinModel model);
