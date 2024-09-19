@@ -67,6 +67,24 @@ public class CoinCollectorEditorTests
     public void CoinController_Constructor_ShouldThrowArgumentException_WhenViewIsNull()
     {
         Assert.That(() => new CoinController(null, _service), Throws.ArgumentNullException);
-        Assert.Throws<ArgumentNullException>(() => new CoinController(null, _service));
+        // Assert.Throws<ArgumentNullException>(() => new CoinController(null, _service));
+    }
+
+    [Test]
+    public void UpdateView_ShouldUpdateCoinDisplay_WhenCoinsAreCollected()
+    {
+        _controller.Collect(1);
+        _view.Received().UpdateCoinsDisplay(1);
+    }
+
+    [TestCase(5, 5, 10)]
+    [TestCase(0, 5, 5)]
+    [TestCase(0, 0, 0)]
+    public void Collect_ShouldAddCoins_WhenCallWithApositiveNumber(int initCoins, int addCoins, int expectCoins)
+    {
+        _model.Coins.Returns(new Observable<int>(initCoins));
+        
+        _controller.Collect(addCoins);
+        Assert.That(_model.Coins.Value, Is.EqualTo(expectCoins));
     }
 }

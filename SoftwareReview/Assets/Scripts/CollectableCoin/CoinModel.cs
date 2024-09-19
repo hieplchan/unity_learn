@@ -7,6 +7,6 @@ namespace CollectableCoin
 
     public class CoinModel : ICoinModel
     {
-        public Observable<int> Coins { get; }
+        public Observable<int> Coins { get; } = new(0);
     }
 }
