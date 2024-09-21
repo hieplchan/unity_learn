@@ -2,8 +2,8 @@ using System.Collections;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using UnityEditor.SceneManagement;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 using UnityEngine.TestTools;
 
 public class LoadSceneAttribute : NUnitAttribute, IOuterUnityTestAction

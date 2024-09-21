@@ -19,5 +19,10 @@ namespace AbilitySystem
         {
             this.data = data;
         }
+
+        public AbilityCommand CreateAbilityCommand()
+        {
+            return new AbilityCommand(data);
+        }
     }
 }

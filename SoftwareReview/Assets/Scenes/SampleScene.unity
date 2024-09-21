@@ -1752,6 +1752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537215613}
   - component: {fileID: 1537215614}
+  - component: {fileID: 1537215616}
   - component: {fileID: 1537215615}
   m_Layer: 5
   m_Name: AbilityView
@@ -1828,6 +1829,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1537215616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537215612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cff359887c047989f3acac047594205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view: {fileID: 1537215614}
+  datas:
+  - {fileID: 11400000, guid: fdb2c1a397aaed5418854889752f7407, type: 2}
+  - {fileID: 11400000, guid: 1db22c61afb5d1742bdf871b655ce2d9, type: 2}
+  - {fileID: 11400000, guid: f0c25171d427e194e90e4646188a41dc, type: 2}
 --- !u!1 &1623354868
 GameObject:
   m_ObjectHideFlags: 0

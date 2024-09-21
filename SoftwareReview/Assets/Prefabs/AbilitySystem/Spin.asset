@@ -15,5 +15,5 @@ MonoBehaviour:
   animationName: {fileID: 1827226128182048838, guid: db509ad77f9b4f84a8eb1989f589b24c,
     type: 3}
   animationHash: -127211926
-  duration: 1
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  duration: 2
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
