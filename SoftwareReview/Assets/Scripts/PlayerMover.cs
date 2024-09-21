@@ -11,6 +11,7 @@ public class PlayerMover : MonoBehaviour
     {
         Vector3 moveDir = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         transform.position += moveSpeed * moveDir * Time.deltaTime;
+        transform.LookAt(moveDir.normalized + transform.position);
 
         if (Input.GetKeyDown(KeyCode.F))
         {
