@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7d3ba9a2f34521ad52eae07b1ae7e3, type: 3}
+  m_Name: SwordSoldierEquipmentFactory
+  m_EditorClassIdentifier: 
+  weaponFactory: {fileID: 11400000, guid: 0ba737b04290c8444bbeda1c2db79a4e, type: 2}
+  shieldFactory: {fileID: 11400000, guid: 11506cb362864e54babf3556cee687b6, type: 2}
