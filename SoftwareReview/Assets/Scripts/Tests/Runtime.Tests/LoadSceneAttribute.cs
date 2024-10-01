@@ -1,7 +1,7 @@
 using System.Collections;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using UnityEditor.SceneManagement;
+// using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -18,7 +18,8 @@ public class LoadSceneAttribute : NUnitAttribute, IOuterUnityTestAction
     public IEnumerator BeforeTest(ITest test)
     {
         Debug.Assert(scene.EndsWith(".unity"), "Scene must end with .unity");
-        yield return EditorSceneManager.LoadSceneInPlayMode(scene, new LoadSceneParameters(LoadSceneMode.Single));
+        // yield return EditorSceneManager.LoadSceneInPlayMode(scene, new LoadSceneParameters(LoadSceneMode.Single));
+        yield return 0;
     }
 
     public IEnumerator AfterTest(ITest test)

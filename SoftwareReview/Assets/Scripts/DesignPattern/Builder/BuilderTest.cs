@@ -8,7 +8,7 @@ public class BuilderTest : MonoBehaviour
         Enemy enemy = new Enemy.Builder()
             .WithName("Goblin")
             .WithHealth(100)
-            .WithSpeed(5)
+            .WithSpeed(5)   
             .WithDamage(10)
             .WithIsBoss(true)
             .Build();
