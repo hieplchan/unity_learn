@@ -8,6 +8,7 @@ https://www.youtube.com/playlist?list=PLnJJ5frTPwROdR23GWZskQPM8w9iFh0oc
 - Strategy
 - Decorator
 - Command
+- Visitor
 
 ## 2. Outline shader
 https://www.youtube.com/watch?v=LMqio9NsqmM
