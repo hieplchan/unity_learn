@@ -10,6 +10,7 @@ https://www.youtube.com/playlist?list=PLnJJ5frTPwROdR23GWZskQPM8w9iFh0oc
 - Command
 - Visitor
 - Memento
+- Service Locator
 
 ## 2. Outline shader
 https://www.youtube.com/watch?v=LMqio9NsqmM
