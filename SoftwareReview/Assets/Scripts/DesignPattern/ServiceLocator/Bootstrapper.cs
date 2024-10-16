@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Utilities;
 
-namespace ServiceLocator
+namespace UnityServiceLocator
 {
     [DisallowMultipleComponent]
     [RequireComponent(typeof(ServiceLocator))]

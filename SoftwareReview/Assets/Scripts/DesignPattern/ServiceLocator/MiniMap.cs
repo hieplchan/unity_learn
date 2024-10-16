@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ServiceLocator
+namespace UnityServiceLocator
 {
     public class MiniMap : MonoBehaviour
     {

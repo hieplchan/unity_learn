@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
-namespace ServiceLocator
+namespace UnityServiceLocator
 {
     public interface ILocalization
     {

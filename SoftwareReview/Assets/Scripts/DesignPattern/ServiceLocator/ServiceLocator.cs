@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utils;
 
-namespace ServiceLocator
+namespace UnityServiceLocator
 {
     public class ServiceLocator : MonoBehaviour
     {

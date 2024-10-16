@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace ServiceLocator
+namespace UnityServiceLocator
 {
     public class HeroWithServiceLocator : MonoBehaviour
     {

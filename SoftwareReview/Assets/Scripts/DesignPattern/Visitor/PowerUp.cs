@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "PowerUp", fileName = "PowerUp")]
 public class PowerUp : ScriptableObject, IVisitor
@@ -18,5 +16,13 @@ public class PowerUp : ScriptableObject, IVisitor
     {
         manaComponent.mana += manaBonus;
         Debug.Log("PowerUp.Visit(ManaComponent)");
+    }
+
+    public void Visit<T>(T visitable) where T : Component, IVisitable
+    {
+        if (typeof(T) == typeof(ManaComponent))
+            Visit(visitable as ManaComponent);
+        else if (typeof(T) == typeof(HealthComponent))
+            Visit(visitable as HealthComponent);
     }
 }

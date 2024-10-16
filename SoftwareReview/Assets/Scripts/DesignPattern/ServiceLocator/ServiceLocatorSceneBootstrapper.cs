@@ -1,4 +1,4 @@
-namespace ServiceLocator
+namespace UnityServiceLocator
 {
     public class ServiceLocatorSceneBootstrapper : Bootstrapper
     {
