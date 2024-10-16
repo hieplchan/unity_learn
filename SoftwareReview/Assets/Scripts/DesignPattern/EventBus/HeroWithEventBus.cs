@@ -32,7 +32,7 @@ public class HeroWithEventBus : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             EventBus<TestEvent>.Raise(new TestEvent());
         }

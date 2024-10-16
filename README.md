@@ -13,6 +13,7 @@ https://www.youtube.com/playlist?list=PLnJJ5frTPwROdR23GWZskQPM8w9iFh0oc
 - Service Locator
 - Facade
 - Mediator
+- Broker Chain
 
 ## 2. Outline shader
 https://www.youtube.com/watch?v=LMqio9NsqmM
