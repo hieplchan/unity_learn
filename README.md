@@ -14,6 +14,7 @@ https://www.youtube.com/playlist?list=PLnJJ5frTPwROdR23GWZskQPM8w9iFh0oc
 - Facade
 - Mediator
 - Broker Chain
+- Flyweight
 
 ## 2. Outline shader
 https://www.youtube.com/watch?v=LMqio9NsqmM
